@@ -1,0 +1,21 @@
+{
+  "name": "bob-bot",
+  "version": "1.0.0",
+  "description": "This is a two part test. The first part is to write a very simple chat bot with some very specific canned responses. The second is to write a realtime chat application to interface with the chat bot. The required technologies here are Ruby, Coffeescript / Javscript outside of that you may use any gems or npm modules to assist in the completion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "James Hicks",
+  "license": "MIT",
+  "dependencies": {
+    "babel-jest": "^5.3.0",
+    "jest-cli": "^0.5.4",
+    "react": "^0.13.3"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"],
+    "testDirectoryName": "spec/javascripts"
+  }
+}
